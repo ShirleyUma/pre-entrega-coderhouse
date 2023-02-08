@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* estilos del index */
+
+.container{
+    height: 100px;
+    display: grid;
+    gap: 2px;
+    grid-template-columns: 2fr 0.5fr 2fr;
+    grid-template-rows: 1fr 2fr 0.5fr;
+    grid-template-areas: "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+/* estilo del body */
+body{
+    background-image: url(../img/imagen-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    grid-area: header;
+}
+
+a{
+    text-decoration-line: none;
+    color: aqua;
+}
+
+main{
+    grid-area: main;
+}
+
+
+/* estilos del footer*/
+footer h5{
+    color: white;
+    grid-template-areas: footer;
+}
+
+
+
+/* estilos del titulos */
+h1{
+    color: darkviolet;
+    text-align: center;
+    font-family: 'Rowdies', cursive;
+    line-height: 1.5;
+    animation: move 3s ease-in-out infinite;
+}
+
+@keyframes move{
+    0%{
+        transform: translate(-30%, 0);
+    }
+}
+
+h2{
+    color: chartreuse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h6{
+    color: white;
+}
+
+
+
+/* estilos del menu de navegacion */
+.menu{
+    background-color: rgba(128, 0, 128, 0.423);
+}
+
+nav ul li{
+    background-color: rgba(128, 0, 128, 0.392);
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    gap: 2px;
+    border: 2px solid;
+}
+
+
+
+/* estilos de textos */
+p{
+    color: white;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    animation: move 2s ease-in-out;
+}
+
+
+
+.colorRed{
+    color: orange;
+}
+#colorGreen{
+    color: green;
+}
+
+
+
+/* estilos de pages music*/
+.dj{
+    background-color: rgba(0, 111, 128, 0.483);
+    color: aqua;
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    border: 3px solid;
+    line-height: 120px;
+    text-align: center;
+    margin: 5px;
+    transition: 1s linear;
+    margin-right: 10px;
+}
+
+div:hover{
+    margin-right: 5px;
+}
+
+.cajas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    text-shadow: 0 0 10px white,
+    0 0 20px white,
+    0 0 40px white;
+}
+
+
+
+/* estilos para pages eventos*/
+table{
+    background-color: rgba(123, 98, 173, 0.56);
+    color: white;
+}
+
+
+
+/* estilos de pages contacto */
+fieldset{
+    background-color: rgba(123, 98, 173, 0.224);
+    border: 2px solid;
+    color: white;
+    padding: 10px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+}
+
+
+/* estilos de pages ubicacion */
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&family=Rowdies:wght@300;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <img src="../img/logo-nombre.jpeg" alt="logo nombre">
+        <h1>Del Otro Lado</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./music.html">Music</a></li>
+                <li><a href="./eventos.html">Eventos</a></li>
+                <li><a href="./ubicacion.html">Ubicacion</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <form>
+            <fieldset>
+                <legend>Tus Datos</legend>
+        <article>
+            <div>
+                <label for="name">Nombre y Apellido</label>
+                    <input type="text" name="name" placeholder="Nombre y Apellido"></div>
+            <div>
+                <label for="">Telefono</label>
+                    <input type="telefono" name="telefono" placeholder="2944592233"></div>
+            <div>
+                <label for="email">Mail
+                    <input type="email" name="mail" placeholder="shirleydelgadillo.bche@gmail.com">
+            </label></div>
+            <div>
+                <label for="">Mensaje
+                    <input type="text" name="mensaje" placeholder="Escribe aqui tu mensaje">
+            </label></div>
+        </article>
+    </fieldset>
+    <fieldset>
+        <legend>Queremos conocerte un poquito mas</legend>
+        <article>
+            <p>Te gusto la página</p>
+            <div>Si
+                <input type="radio" name="eleccion" value="Si">
+            </div>
+            <div>No
+                <input type="radio" name="eleccion" value="No">
+            </div>
+            <div>
+                <p>Que te interesa mas</p>
+                <select name="opcion" id="opcion">
+                    <option value="eventos">Eventos</option>
+                    <option value="music">Music</option>
+                    <option value="info">Info</option>
+                    <option value="todo">Todo el sitio</option>
+                </select>
+            </div>
+            <div> 
+                <p>Queres estar actualizado y enterarte lo nuevo</p>
+                <input type="checkbox" name="aceptar" value="1">Si
+                <input type="checkbox" name="aceptar" value="1">No</div>
+            <div>
+                <input type="submit" value="Quiero recibir mas data">
+                <input type="reset" value="Resetear">
+            </div>
+        </article>
+    </fieldset>
+        </form>
+    </section>
+    <footer>
+        <h5>Redes Sociales</h5>
+        <img src="../img/logo-facebook.png" alt="logo de facebook">
+        <img src="../img/logo-instagram.png" alt="logo de instagram">
+        <img src="../img/logo-spotify.png" alt="logo spotify">
+        <h6>Todos los derechos reservados. Solo proyecto CoderHouse.</h6></footer>
+</body>
+</html>
